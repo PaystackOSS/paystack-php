@@ -12,7 +12,7 @@ class Paystack
     public $use_guzzle = false;
     public $custom_routes = [];
     public static $fallback_to_file_get_contents = true;
-    const VERSION="2.1.19";
+    const VERSION="2.2.0";
 
     public function __construct($secret_key)
     {
@@ -42,9 +42,15 @@ class Paystack
                 );
             }
 
+            if (!class_exists($class)) {
+                throw new \InvalidArgumentException(
+                    'Custom route class ' . $class . ' does not exist.'
+                );
+            }
+
             if (! in_array(RouteInterface::class, class_implements($class))) {
                 throw new \InvalidArgumentException(
-                    'Custom route class ' . $class . 'should implement ' . RouteInterface::class
+                    'Custom route class ' . $class . ' should implement ' . RouteInterface::class
                 );
             }
         }

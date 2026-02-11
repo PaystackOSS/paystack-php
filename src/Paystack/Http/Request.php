@@ -110,7 +110,9 @@ class Request
         );
         $this->response->body = file_get_contents($this->endpoint, false, $context);
         if ($this->response->body === false) {
-            $this->response->messages[] = 'file_get_contents failed with response: \'' . error_get_last() . '\'.';
+            $error = error_get_last();
+            $errorMessage = $error ? ($error['message'] ?? 'Unknown error') : 'Unknown error';
+            $this->response->messages[] = 'file_get_contents failed with response: \'' . $errorMessage . '\'.';
         } else {
             $this->response->okay = true;
         }
