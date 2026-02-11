@@ -4,7 +4,7 @@ namespace Yabacon\Paystack\Tests;
 use Yabacon\Paystack\MetadataBuilder;
 use Yabacon\Paystack\Exception\BadMetaNameException;
 
-class MetadataBuilderTest extends \PHPUnit_Framework_TestCase
+class MetadataBuilderTest extends \PHPUnit\Framework\TestCase
 {
     public function testWith()
     {

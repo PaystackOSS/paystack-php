@@ -4,7 +4,7 @@ namespace Yabacon\Paystack\Tests\Routes;
 use Yabacon\Paystack\Contracts\RouteInterface;
 use Yabacon\Paystack\Routes\Transfer;
 
-class TransferTest extends \PHPUnit_Framework_TestCase
+class TransferTest extends \PHPUnit\Framework\TestCase
 {
     public function testRoot()
     {

@@ -4,7 +4,7 @@ namespace Yabacon\Paystack\Tests\Http;
 use Yabacon\Paystack\Http\Response;
 use Yabacon\Paystack\Exception\ApiException;
 
-class ResponseTest extends \PHPUnit_Framework_TestCase
+class ResponseTest extends \PHPUnit\Framework\TestCase
 {
     public function testInitialize()
     {

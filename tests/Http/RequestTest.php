@@ -5,7 +5,7 @@ use Yabacon\Paystack\Http\Request;
 use Yabacon\Paystack\Http\Response;
 use Yabacon\Paystack;
 
-class RequestTest extends \PHPUnit_Framework_TestCase
+class RequestTest extends \PHPUnit\Framework\TestCase
 {
     public function testInitialize()
     {

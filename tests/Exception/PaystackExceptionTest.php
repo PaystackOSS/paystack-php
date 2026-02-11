@@ -4,7 +4,7 @@ namespace Yabacon\Paystack\Tests\Exception;
 
 use Yabacon\Paystack\Exception\PaystackException;
 
-class PaystackExceptionTest extends \PHPUnit_Framework_TestCase
+class PaystackExceptionTest extends \PHPUnit\Framework\TestCase
 {
     public function testInitialize()
     {

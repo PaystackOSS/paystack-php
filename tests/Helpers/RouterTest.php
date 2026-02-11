@@ -8,7 +8,7 @@ use Yabacon\Paystack\Test\Mock\CustomRoute;
 use Yabacon\Paystack\Contracts\RouteInterface;
 use Yabacon\Paystack\Exception\ValidationException;
 
-class RouterTest extends \PHPUnit_Framework_TestCase
+class RouterTest extends \PHPUnit\Framework\TestCase
 {
     public function testInitialize()
     {

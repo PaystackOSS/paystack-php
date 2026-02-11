@@ -4,7 +4,7 @@ namespace Yabacon\Paystack\Tests\Routes;
 use Yabacon\Paystack\Contracts\RouteInterface;
 use Yabacon\Paystack\Routes\Subaccount;
 
-class SubaccountTest extends \PHPUnit_Framework_TestCase
+class SubaccountTest extends \PHPUnit\Framework\TestCase
 {
     public function testRoot()
     {

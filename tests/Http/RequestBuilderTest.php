@@ -7,7 +7,7 @@ use Yabacon\Paystack\Contracts\RouteInterface;
 use Yabacon\Paystack\Routes\Customer;
 use Yabacon\Paystack\Routes\Transaction;
 
-class RequestBuilderTest extends \PHPUnit_Framework_TestCase
+class RequestBuilderTest extends \PHPUnit\Framework\TestCase
 {
     public function testMoveArgsToSentargs()
     {
