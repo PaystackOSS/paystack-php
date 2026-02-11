@@ -5,4 +5,5 @@ vendor
 nbproject
 .env
 .idea/
-tests/EndToEndTests.php
+tests/EndToEndTests.php.phpunit.cache/
+.phpunit.result.cache
