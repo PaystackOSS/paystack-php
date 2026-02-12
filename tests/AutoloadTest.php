@@ -1,7 +1,7 @@
 <?php
 namespace Yabacon\Paystack\Tests;
 
-class AutoloadTest extends \PHPUnit_Framework_TestCase
+class AutoloadTest extends \PHPUnit\Framework\TestCase
 {
     public function testAutoload()
     {

@@ -85,7 +85,7 @@ class Router
                 $caller = new Caller($paystackObj);
                 return $caller->callEndpoint($interface, $params, $sentargs);
             };
-            $this->methods[$mtd] = \Closure::bind($mtdFunc, $this, get_class());
+            $this->methods[$mtd] = \Closure::bind($mtdFunc, $this, static::class);
         }
     }
 

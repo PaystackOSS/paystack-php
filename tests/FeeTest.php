@@ -3,7 +3,7 @@ namespace Yabacon\Paystack\Tests;
 
 use Yabacon\Paystack\Fee;
 
-class FeeTest extends \PHPUnit_Framework_TestCase
+class FeeTest extends \PHPUnit\Framework\TestCase
 {
     public function testAddFor()
     {

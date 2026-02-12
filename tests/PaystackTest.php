@@ -6,7 +6,7 @@ use Yabacon\Paystack\Helpers\Router;
 use Yabacon\Paystack\Test\Mock\CustomRoute;
 use \Yabacon\Paystack\Exception\ValidationException;
 
-class PaystackTest extends \PHPUnit_Framework_TestCase
+class PaystackTest extends \PHPUnit\Framework\TestCase
 {
     public function testInitializeWithInvalidSecretKey()
     {
@@ -16,7 +16,7 @@ class PaystackTest extends \PHPUnit_Framework_TestCase
 
     public function testVersion()
     {
-        $this->assertEquals("2.1.19", Paystack::VERSION);
+        $this->assertEquals("2.2.0", Paystack::VERSION);
     }
 
     public function testDisableFileGetContentsFallback()

@@ -17,8 +17,8 @@ class EventTestDouble extends \Yabacon\Paystack\Event
     . 'CUS_youwhistle","phone":null,"metadata":null,"risk_action":"default"},"tran'
     . 'saction":{"reference":"someref","status":"success","amount":150000,"currenc'
     . 'y":"NGN"},"created_at":"2017-01-13T00:00:02.000Z"}}';
-    const DUMMY_SIGNATURE = '0ef509bb72218531a7d0aa58d2b8dcd93f63f7a4d1f8e2e36eadd'
-    . '4f0a19455a92f2ca57a57bfe98dc25f91c47b1221343d61fdd5fd2b7c41b8466cbe5ebd4974';
+    const DUMMY_SIGNATURE = 'd955c6a79e1bc1e29aac57882ab71f8c2d93d8bf6f4fd51c3ce2fede2986124c'
+    . 'afbe657fc7655b20e6a9d4e684bfa875bdd55e577015a9532e9543c9c11c81a9';
 
     public static function dummyCapture()
     {

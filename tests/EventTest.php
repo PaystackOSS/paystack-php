@@ -4,15 +4,15 @@ namespace Yabacon\Paystack\Tests;
 use Yabacon\Paystack\Test\Mock\EventTestDouble as MockEvent;
 use Yabacon\Paystack\Event;
 
-class EventTest extends \PHPUnit_Framework_TestCase
+class EventTest extends \PHPUnit\Framework\TestCase
 {
     public function testDiscoverOwner()
     {
         $evt = MockEvent::dummyCapture();
         $this->assertEquals('nameee', $evt->discoverOwner([
-            'notme'=>'sk_live_inv4L1dinv4L1dinv4L1dinv4L1d',
-            'notmeeither'=>'sk_test_inv4L1dinv4L1dinv4L1d',
-            'nameee'=>'sk_test_inv4L1dinv4L1dinv4L1dinv4L1d',
+            'notme'=>'sk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+            'notmeeither'=>'sk_test_yyyyyyyyyyyyyyyyyyyyyyyy',
+            'nameee'=>'sk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
         ]));
     }
 
@@ -48,6 +48,6 @@ class EventTest extends \PHPUnit_Framework_TestCase
     public function testValidFor()
     {
         $evt = MockEvent::dummyCapture();
-        $this->assertTrue($evt->validFor('sk_test_inv4L1dinv4L1dinv4L1dinv4L1d'));
+        $this->assertTrue($evt->validFor('sk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'));
     }
 }

@@ -5,7 +5,7 @@ use Yabacon\Paystack\Helpers\Caller;
 use Yabacon\Paystack;
 use Yabacon\Paystack\Contracts\RouteInterface;
 
-class CallerTest extends \PHPUnit_Framework_TestCase
+class CallerTest extends \PHPUnit\Framework\TestCase
 {
     public function testInitialize()
     {

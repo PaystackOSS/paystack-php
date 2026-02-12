@@ -4,7 +4,7 @@ namespace Yabacon\Paystack\Tests\Routes;
 use Yabacon\Paystack\Contracts\RouteInterface;
 use Yabacon\Paystack\Routes\Bank;
 
-class BankTest extends \PHPUnit_Framework_TestCase
+class BankTest extends \PHPUnit\Framework\TestCase
 {
     public function testRoot()
     {

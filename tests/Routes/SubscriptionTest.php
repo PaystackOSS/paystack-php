@@ -4,7 +4,7 @@ namespace Yabacon\Paystack\Tests\Routes;
 use Yabacon\Paystack\Contracts\RouteInterface;
 use Yabacon\Paystack\Routes\Subscription;
 
-class SubscriptionTest extends \PHPUnit_Framework_TestCase
+class SubscriptionTest extends \PHPUnit\Framework\TestCase
 {
     public function testRoot()
     {

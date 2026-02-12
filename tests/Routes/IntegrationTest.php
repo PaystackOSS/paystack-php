@@ -4,7 +4,7 @@ namespace Yabacon\Paystack\Tests\Routes;
 use Yabacon\Paystack\Contracts\RouteInterface;
 use Yabacon\Paystack\Routes\Integration;
 
-class IntegrationTest extends \PHPUnit_Framework_TestCase
+class IntegrationTest extends \PHPUnit\Framework\TestCase
 {
     public function testRoot()
     {
