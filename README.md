@@ -13,7 +13,7 @@ A PHP API wrapper for [Paystack](https://paystack.co/).
 
 ## Requirements
 - Curl 7.34.0 or more recent (Unless using Guzzle)
-- PHP 5.4.0 or more recent
+- PHP 7.4.0 or more recent
 - OpenSSL v1.0.1 or more recent
 
 ## Install
@@ -166,10 +166,10 @@ Generally, to make an API request after constructing a paystack object, Make a c
  to the resource/method thus: `$paystack->{resource}->{method}()`; for gets,
   use `$paystack->{resource}(id)` and to list resources: `$paystack->{resource}s()`.
 
-Currently, we support: 'customer', 'page', 'plan', 'subscription', 'transaction' and 'subaccount'. Check
+Currently, we support: 'customer', 'page', 'plan', 'subscription', 'transaction', 'subaccount', 'balance', 'bank', 'transfer', 'transferrecipient', 'invoice', 'settlement', 'integration' and 'decision'. Check
 our API reference([link-paystack-api-reference][link-paystack-api-reference]) for the methods supported. To specify parameters, send as an array.
 
-Check [SAMPLES](SAMPLES.md) for more sample calls
+Check [SAMPLES](SAMPLES.md) for more sample calls, or see the [examples/cactus-shop](examples/cactus-shop) directory for a complete working demo.
 
 ## Extras
 
